@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499148106193",
+    "project_id": "movieapp-91a2e",
+    "storage_bucket": "movieapp-91a2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499148106193:android:beb06f774f503f7ec198f0",
+        "android_client_info": {
+          "package_name": "com.example.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499148106193-thek22qcpbhjks6k3d8mfa33uf9r6rr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Fn_c7KnRahwWBqHw7iP11OhY0xC4qxY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499148106193-thek22qcpbhjks6k3d8mfa33uf9r6rr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
