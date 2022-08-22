@@ -11,7 +11,7 @@ class _FirstScreenPageState extends State<FirstScreenPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF9FCF8),
+      backgroundColor: const Color(0xFFF9FCF8),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -19,7 +19,7 @@ class _FirstScreenPageState extends State<FirstScreenPage> {
             'assets/speech.png',
             width: 100,
           ),
-          Center(
+          const Center(
               child: Text(
             "Flash Chat",
             style: TextStyle(
@@ -33,11 +33,12 @@ class _FirstScreenPageState extends State<FirstScreenPage> {
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Color(0xFf466443)),
+                style:
+                    ElevatedButton.styleFrom(primary: const Color(0xFf466443)),
                 onPressed: () {
-                  Navigator.pushNamed(context, 'register');
+                  Navigator.pushReplacementNamed(context, '/register');
                 },
-                child: Text("Register"),
+                child: const Text("Register"),
               ),
             ),
           ),
@@ -48,14 +49,15 @@ class _FirstScreenPageState extends State<FirstScreenPage> {
               height: 50,
               child: OutlinedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, 'login');
+                  Navigator.pushReplacementNamed(context, '/login');
                 },
-                child: Text(
+                // ignore: sort_child_properties_last
+                child: const Text(
                   "Login",
                   style: TextStyle(fontSize: 18, color: Color(0xFf466443)),
                 ),
                 style: OutlinedButton.styleFrom(
-                  side: BorderSide(width: 1.0, color: Color(0xFf466443)),
+                  side: const BorderSide(width: 1.0, color: Color(0xFf466443)),
                 ),
               ),
             ),

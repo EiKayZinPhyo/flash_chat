@@ -5,7 +5,6 @@ import 'package:flash_chat/screens/flashchat.dart';
 import 'package:flash_chat/screens/login.dart';
 import 'package:flash_chat/screens/register.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,12 +22,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'firstscreen',
+      initialRoute: '/flashchat',
       routes: {
-        "firstscreen": (context) => FirstScreenPage(),
-        "register": (context) => RegisterPage(),
-        "login": (context) => LoginPage(),
-        'flashchat': (context) => FlashChat()
+        "/firstscreen": (context) => FirstScreenPage(),
+        "/register": (context) => RegisterPage(),
+        "/login": (context) => LoginPage(),
+        '/flashchat': (context) => FlashChat()
       },
     );
   }
